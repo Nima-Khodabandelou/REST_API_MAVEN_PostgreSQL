@@ -1,6 +1,5 @@
 var chartDataStr = decodeHtml(chartData);
 var chartJsonArray = JSON.parse(chartDataStr);
-
 var arrayLength = chartJsonArray.length;
 
 var numericData = [];
