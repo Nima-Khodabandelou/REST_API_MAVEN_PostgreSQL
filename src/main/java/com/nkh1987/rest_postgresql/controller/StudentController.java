@@ -39,6 +39,7 @@ public class StudentController {
     @PutMapping("/students/{id}")
     public ResponseEntity<Student> updateStudent(@PathVariable Long id,
                                                  @RequestBody Student studentData) {
+
         Student student = studentRepository.findById(id).orElseThrow(() ->
                 new ResourceNotFoundException("Student with id" + id + "doesn't exist"));
         student.setFirstName(studentData.getFirstName());
