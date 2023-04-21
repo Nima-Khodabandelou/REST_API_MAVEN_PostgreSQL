@@ -14,7 +14,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="REST_API_MAVEN_PostgreSQL" value="cc0172b7-d87a-441a-b18f-78cbbed0fd8f" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>

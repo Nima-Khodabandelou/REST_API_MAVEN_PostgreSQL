@@ -4,7 +4,9 @@ REST architecture is used for API development.
 Hibernate is utilized as ORM and data is persisted in PostgreSQL database.
 Also, Maven is chosen for building the project.
 
+##
 First, a repository is created on GitHub containing Licence, Readme, and gitignore (for Java) files.
+##
 Then, the repo is cloned to hard-drive on a specific folder. The Spring JAR file is generated on
 https://start.spring.io website considering relevant dependencies (i.e. Spring Boot Devtools,
 Spring Web, PostgreSQL Driver, and Spring Data JPA). In the next step, the generated JAR file is 
