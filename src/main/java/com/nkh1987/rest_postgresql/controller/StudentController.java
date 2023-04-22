@@ -15,6 +15,7 @@ import java.util.Map;
 @RequestMapping("/api/v1/")
 public class StudentController {
 
+    // Since field injection is used, Autowired annotation should be applied
     @Autowired
     private StudentRepository studentRepository;
 
