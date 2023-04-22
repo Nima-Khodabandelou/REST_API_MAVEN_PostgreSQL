@@ -31,8 +31,8 @@ CREATE DATABASE students;
 ALTER DATABASE students OWNER TO manager;
 ###
 INSERT INTO students (first_name, last_name, email) VALUES ('sample first name', 'sample last name', 'sample email');
-[comment]: # <!--- Note that having used Spring Data JPA, one doesn't need to create table and columns in SQL
- shell terminal, explicitly. Spring do the job! -->
+// Note that having used Spring Data JPA, one doesn't need to create table and columns in SQL
+// shell terminal, explicitly. Spring do the job! -->
 ###
 SELECT * FROM students;     
 ##
