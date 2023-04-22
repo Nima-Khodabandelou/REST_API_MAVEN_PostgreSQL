@@ -10,18 +10,37 @@ A repository is created on GitHub containing Licence, Readme, and gitignore (for
 The repo is cloned to hard-drive on a specific folder.
 ##
 The Spring JAR file is generated on https://start.spring.io website considering relevant
-  dependencies (i.e. Spring Boot Devtools, Spring Web, PostgreSQL Driver, and Spring Data JPA).
+  dependencies, i.e. Spring Boot Devtools, Spring Web, PostgreSQL Driver, and Spring Data JPA (
+  One may add H2 in-memory database dependency instead of external RDMS in order to be
+  completely focused on the backend (and frontend if any) section(s) of the project; however,
+  this is not the case with current development approach).
 ##  
-The generated JAR file is extracted in the project folder on hard-drive.
+The generated JAR file is extracted in the project folder on hard-drive. The project is
+pre-configured by Spring Boot under the hood and several files and folders are available 
+to start the software development process.
 ##
-Using an appropriate IDE (Intellij Idea in our case), the project folder is opened and the newly added
-  files are committed and pushed to the GitHub repo.
-##  
-The project is pre-configured by Spring Boot under the hood and several files and folders are available 
-  to start the software development process.
-##  
-The developer may use H2 in-memory database instead of external RDMS such as PostgreSQL in order to be
-  completely focused on the backend (and frontend if any) section(s) of the project and external RDMS 
-  would be considered later on; however, this is not the case with our development approach.
+Using an appropriate IDE (Intellij Idea in the current approach), the project folder is opened
+and the newly added files are committed and pushed to the GitHub repo.
+##
+Postgres commands:
+###
+CREATE USER manager WITH LOGIN PASSWORD 'abc123';
+###
+CREATE DATABASE students;  
+###
+ALTER DATABASE students OWNER TO manager;
+###
+INSERT INTO students (first_name, last_name, email) VALUES ('sample first name', 'sample last name', 'sample email');
+###
+// Note that having used Spring Data JPA, one doesn't need to create table and columns in SQL
+shell terminal, explicitly. Spring do the job!
+###
+SELECT * FROM students;     
+##
+application.properties should be modified according to Postgres config as well as JPA requirements.
+## 
+Controller, Model, Repository, and Exception packages are created and pertinent classes are developed.
+##
+Postman, Swagger UI, or other alternatives may be used for API testing.
 
 
