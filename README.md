@@ -37,9 +37,10 @@ shell terminal, explicitly. Spring do the job!
 ###
 SELECT * FROM students;     
 ##
-application.properties should be modified according to Postgres config and JPA and Hibernate requirements.
+application.properties should be modified according to Postgres config as well as JPA requirements.
 ## 
 Controller, Model, Repository, and Exception packages are created and pertinent classes are developed.
-
+##
+Postman, Swagger UI, or other alternatives may be used for API testing.
 
 
