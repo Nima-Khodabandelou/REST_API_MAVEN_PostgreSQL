@@ -18,11 +18,21 @@ The Spring JAR file is generated on https://start.spring.io website considering 
 The generated JAR file is extracted in the project folder on hard-drive. The project is
 pre-configured by Spring Boot under the hood and several files and folders are available 
 to start the software development process.
-
 ##
 Using an appropriate IDE (Intellij Idea in the current approach), the project folder is opened
 and the newly added files are committed and pushed to the GitHub repo.
-##  
+##
+Postgres commands:
+###
+CREATE USER manager WITH LOGIN PASSWORD 'abc123';
+###
+CREATE DATABASE students;  
+###
+ALTER DATABASE students OWNER TO manager;
+###
+INSERT INTO students (first_name, last_name, email) VALUES ('sample first name', 'sample last name', 'sample email');
+###
+SELECT * FROM students;     
 
 
 
