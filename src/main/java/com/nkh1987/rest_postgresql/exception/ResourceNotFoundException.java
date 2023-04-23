@@ -6,8 +6,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException {
 
-    /** Repeated from https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html for
+    /** This class extends an exception class, so if serialversionUID not provided compiler will give error. 
+     *
+     *  Repeated from https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html for
      *  clarity:
+     *
      *  The serialization runtime associates with each serializable class a version number, called a serialVersionUID,
      *  which is used during deserialization to verify that the sender and receiver of a serialized object have loaded
      *  classes for that object that are compatible with respect to serialization. If the receiver has loaded a class
