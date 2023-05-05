@@ -2,15 +2,10 @@ package com.nkh1987.rest_postgresql.controller;
 
 
 import com.nkh1987.rest_postgresql.exception.ResourceNotFoundException;
-
 import com.nkh1987.rest_postgresql.model.Student;
-
 import com.nkh1987.rest_postgresql.repository.StudentRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.http.ResponseEntity;
-
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
