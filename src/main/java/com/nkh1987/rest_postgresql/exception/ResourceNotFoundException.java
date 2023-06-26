@@ -1,4 +1,4 @@
-opackage com.nkh1987.rest_postgresql.exception;
+package com.nkh1987.rest_postgresql.exception;
 
 import org.springframework.http.HttpStatus;
 
