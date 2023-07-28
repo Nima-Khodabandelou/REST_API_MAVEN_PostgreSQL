@@ -25,7 +25,7 @@ public class StudentController {
     }
 
     @PostMapping("/students")
-    public Student creatStudent(@RequestBody Student student) {
+    public Student createStudent(@RequestBody Student student) {
         return studentRepository.save(student);
     }
 
