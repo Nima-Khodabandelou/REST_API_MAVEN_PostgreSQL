@@ -1,5 +1,6 @@
 package com.nkh1987.rest_postgresql.controller;
 
+
 import com.nkh1987.rest_postgresql.exception.ResourceNotFoundException;
 import com.nkh1987.rest_postgresql.model.Student;
 import com.nkh1987.rest_postgresql.repository.StudentRepository;
@@ -49,6 +50,7 @@ public class StudentController {
 
         Student updatedStudent = studentRepository.save(student);
         return ResponseEntity.ok(updatedStudent);
+        
     }
 
     @DeleteMapping("/students/{id}")
@@ -61,5 +63,6 @@ public class StudentController {
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return ResponseEntity.ok(response);
+        
     }
 }
